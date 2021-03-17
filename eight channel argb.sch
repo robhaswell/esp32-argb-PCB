@@ -52,27 +52,9 @@ F 3 "https://aliexpress.com/item/32864722159.html" H 2800 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 2150 4550 3050
+	4950 3250 4700 3250
 Wire Wire Line
-	4550 3050 4950 3050
-Wire Wire Line
-	4950 3250 4550 3250
-Wire Wire Line
-	4550 3250 4550 3050
-Connection ~ 4550 3050
-Wire Wire Line
-	4950 2100 4950 2400
-Wire Wire Line
-	4950 2400 4800 2400
-Wire Wire Line
-	4800 2400 4800 3350
-Wire Wire Line
-	4800 3350 4950 3350
-Wire Wire Line
-	4950 4450 4800 4450
-Wire Wire Line
-	4800 4450 4800 3350
-Connection ~ 4800 3350
+	4950 4450 4900 4450
 Wire Wire Line
 	3850 3300 4650 3300
 Wire Wire Line
@@ -140,13 +122,8 @@ NoConn ~ 2650 2600
 NoConn ~ 2650 2800
 NoConn ~ 2650 2900
 NoConn ~ 3250 2400
-Connection ~ 4800 4450
 Wire Wire Line
 	3150 5200 3150 5300
-Wire Wire Line
-	3150 5300 4800 5300
-Wire Wire Line
-	4800 4450 4800 5300
 NoConn ~ 3250 5200
 $Comp
 L eight-channel-argb-rescue:Conn_01x03-Connector_Generic J1
@@ -226,7 +203,7 @@ F 3 "~" H 7350 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 1850 7000 2100
+	7000 1950 7000 2100
 Wire Wire Line
 	7000 4900 7150 4900
 Wire Wire Line
@@ -347,13 +324,6 @@ Wire Wire Line
 	7150 5000 6350 5000
 Wire Wire Line
 	6350 5000 6350 3750
-Wire Wire Line
-	4550 2150 4700 2150
-Wire Wire Line
-	4900 1850 4900 1950
-Wire Wire Line
-	4900 1950 4700 1950
-Connection ~ 4700 1950
 $Comp
 L eight-channel-argb-rescue:SW_DIP_x01-Switch SW1
 U 1 1 5FFD2886
@@ -369,8 +339,6 @@ Wire Wire Line
 	3150 1950 3250 1950
 Wire Wire Line
 	3150 1950 3150 2400
-Wire Wire Line
-	4100 1950 4700 1950
 $Comp
 L eight-channel-argb-rescue:PWR_FLAG-power #FLG01
 U 1 1 5FF41B16
@@ -388,99 +356,114 @@ Wire Wire Line
 $Comp
 L SamacSys:350211-1 J?
 U 1 1 6053820E
-P 5300 1300
-F 0 "J?" H 5928 1196 50  0000 L CNN
-F 1 "350211-1" H 5928 1105 50  0000 L CNN
-F 2 "3502111" H 5950 1400 50  0001 L CNN
-F 3 "http://uk.rs-online.com/web/p/products/0471430" H 5950 1300 50  0001 L CNN
-F 4 "Pin & Socket Connectors CONN PCM 4 POS TIN" H 5950 1200 50  0001 L CNN "Description"
-F 5 "10.29" H 5950 1100 50  0001 L CNN "Height"
-F 6 "0471430" H 5950 1000 50  0001 L CNN "RS Part Number"
-F 7 "http://uk.rs-online.com/web/p/products/0471430" H 5950 900 50  0001 L CNN "RS Price/Stock"
-F 8 "TE Connectivity" H 5950 800 50  0001 L CNN "Manufacturer_Name"
-F 9 "350211-1" H 5950 700 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5300 1300
+P 5000 1300
+F 0 "J?" H 5628 1196 50  0000 L CNN
+F 1 "350211-1" H 5628 1105 50  0000 L CNN
+F 2 "3502111" H 5650 1400 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/0471430" H 5650 1300 50  0001 L CNN
+F 4 "Pin & Socket Connectors CONN PCM 4 POS TIN" H 5650 1200 50  0001 L CNN "Description"
+F 5 "10.29" H 5650 1100 50  0001 L CNN "Height"
+F 6 "0471430" H 5650 1000 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/0471430" H 5650 900 50  0001 L CNN "RS Price/Stock"
+F 8 "TE Connectivity" H 5650 800 50  0001 L CNN "Manufacturer_Name"
+F 9 "350211-1" H 5650 700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5000 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 1850 5000 1850
-Connection ~ 5200 2100
+	5000 1600 4700 1600
 Wire Wire Line
-	5200 2100 6900 2100
+	5000 1500 4900 1500
+Connection ~ 4900 1500
 Wire Wire Line
-	4950 2100 5200 2100
+	5000 1400 4900 1400
 Wire Wire Line
-	4700 1950 4700 2150
-Connection ~ 5000 1850
+	4900 1400 4900 1500
 Wire Wire Line
-	5000 1850 7000 1850
+	4900 1500 4900 2100
 Wire Wire Line
-	5300 1600 5000 1600
-Wire Wire Line
-	5300 1500 5200 1500
-Connection ~ 5200 1500
-Wire Wire Line
-	5300 1400 5200 1400
-Wire Wire Line
-	5200 1400 5200 1500
-Wire Wire Line
-	5200 1500 5200 2100
-Wire Wire Line
-	5000 1600 5000 1850
+	4700 1600 4700 1950
 $Comp
 L eight-channel-argb-rescue:PWR_FLAG-power #FLG03
 U 1 1 5FF8D592
-P 5200 1050
-F 0 "#FLG03" H 5200 1125 50  0001 C CNN
-F 1 "PWR_FLAG" H 4950 1050 50  0000 C CNN
-F 2 "" H 5200 1050 50  0001 C CNN
-F 3 "~" H 5200 1050 50  0001 C CNN
-	1    5200 1050
+P 4900 1050
+F 0 "#FLG03" H 4900 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 1050 50  0000 C CNN
+F 2 "" H 4900 1050 50  0001 C CNN
+F 3 "~" H 4900 1050 50  0001 C CNN
+	1    4900 1050
 	1    0    0    -1  
 $EndComp
-Connection ~ 5200 1050
-Connection ~ 5000 950 
+Connection ~ 4900 1050
+Connection ~ 4700 950 
 Wire Wire Line
-	5200 1050 5200 1400
+	4900 1050 4900 1400
 Wire Wire Line
-	5000 950  5000 1600
+	4700 950  4700 1600
 $Comp
 L eight-channel-argb-rescue:GND-power #PWR02
 U 1 1 5FF37BFD
-P 5200 850
-F 0 "#PWR02" H 5200 600 50  0001 C CNN
-F 1 "GND" H 5205 677 50  0000 C CNN
-F 2 "" H 5200 850 50  0001 C CNN
-F 3 "" H 5200 850 50  0001 C CNN
-	1    5200 850 
+P 4900 850
+F 0 "#PWR02" H 4900 600 50  0001 C CNN
+F 1 "GND" H 4905 677 50  0000 C CNN
+F 2 "" H 4900 850 50  0001 C CNN
+F 3 "" H 4900 850 50  0001 C CNN
+	1    4900 850 
 	-1   0    0    1   
 $EndComp
 $Comp
 L eight-channel-argb-rescue:PWR_FLAG-power #FLG02
 U 1 1 5FF6F199
-P 5000 950
-F 0 "#FLG02" H 5000 1025 50  0001 C CNN
-F 1 "PWR_FLAG" H 4750 950 50  0000 C CNN
-F 2 "" H 5000 950 50  0001 C CNN
-F 3 "~" H 5000 950 50  0001 C CNN
-	1    5000 950 
+P 4700 950
+F 0 "#FLG02" H 4700 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 4450 950 50  0000 C CNN
+F 2 "" H 4700 950 50  0001 C CNN
+F 3 "~" H 4700 950 50  0001 C CNN
+	1    4700 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 1050 5200 850 
+	4900 1050 4900 850 
 Wire Wire Line
-	5000 850  5000 950 
+	4700 850  4700 950 
 $Comp
 L eight-channel-argb-rescue:+5V-power #PWR01
 U 1 1 5FF37571
-P 5000 850
-F 0 "#PWR01" H 5000 700 50  0001 C CNN
-F 1 "+5V" H 5015 1023 50  0000 C CNN
-F 2 "" H 5000 850 50  0001 C CNN
-F 3 "" H 5000 850 50  0001 C CNN
-	1    5000 850 
+P 4700 850
+F 0 "#PWR01" H 4700 700 50  0001 C CNN
+F 1 "+5V" H 4715 1023 50  0000 C CNN
+F 2 "" H 4700 850 50  0001 C CNN
+F 3 "" H 4700 850 50  0001 C CNN
+	1    4700 850 
 	1    0    0    -1  
 $EndComp
-Connection ~ 5200 1400
-Connection ~ 5000 1600
+Connection ~ 4900 1400
+Connection ~ 4700 1600
+Connection ~ 4700 1950
+Connection ~ 4900 2100
+Wire Wire Line
+	4900 2100 6900 2100
+Wire Wire Line
+	4700 1950 7000 1950
+Wire Wire Line
+	4900 2100 4900 3350
+Connection ~ 4900 4450
+Wire Wire Line
+	4900 4450 4900 5300
+Wire Wire Line
+	3150 5300 4900 5300
+Wire Wire Line
+	4700 1950 4700 3050
+Connection ~ 4700 3050
+Wire Wire Line
+	4700 3050 4950 3050
+Wire Wire Line
+	4100 1950 4700 1950
+Wire Wire Line
+	4700 3050 4700 3250
+Connection ~ 4900 3350
+Wire Wire Line
+	4900 3350 4950 3350
+Wire Wire Line
+	4900 3350 4900 4450
 $EndSCHEMATC
