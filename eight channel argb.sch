@@ -30,7 +30,7 @@ F 8 "382279" H 5650 3650 50  0001 L BNN "OC_FARNELL"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J2
+L eight-channel-argb-rescue:Conn_01x03-Connector_Generic J2
 U 1 1 5FF2A38F
 P 7350 2600
 F 0 "J2" H 7430 2642 50  0000 L CNN
@@ -49,28 +49,6 @@ F 1 "ESP32_DevKit_V1_DOIT" H 3250 5290 50  0000 C CNN
 F 2 "esp32:esp32_devkit_v1_doit" H 2800 5150 50  0001 C CNN
 F 3 "https://aliexpress.com/item/32864722159.html" H 2800 5150 50  0001 C CNN
 	1    3250 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR01
-U 1 1 5FF37571
-P 4700 1500
-F 0 "#PWR01" H 4700 1350 50  0001 C CNN
-F 1 "+5V" H 4715 1673 50  0000 C CNN
-F 2 "" H 4700 1500 50  0001 C CNN
-F 3 "" H 4700 1500 50  0001 C CNN
-	1    4700 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5FF37BFD
-P 5200 1200
-F 0 "#PWR02" H 5200 950 50  0001 C CNN
-F 1 "GND" H 5205 1027 50  0000 C CNN
-F 2 "" H 5200 1200 50  0001 C CNN
-F 3 "" H 5200 1200 50  0001 C CNN
-	1    5200 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -171,7 +149,7 @@ Wire Wire Line
 	4800 4450 4800 5300
 NoConn ~ 3250 5200
 $Comp
-L Connector_Generic:Conn_01x03 J1
+L eight-channel-argb-rescue:Conn_01x03-Connector_Generic J1
 U 1 1 5FF476B4
 P 7350 2200
 F 0 "J1" H 7430 2242 50  0000 L CNN
@@ -182,7 +160,7 @@ F 3 "~" H 7350 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J7
+L eight-channel-argb-rescue:Conn_01x03-Connector_Generic J7
 U 1 1 5FF47C5F
 P 7350 4600
 F 0 "J7" H 7430 4642 50  0000 L CNN
@@ -193,7 +171,7 @@ F 3 "~" H 7350 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J6
+L eight-channel-argb-rescue:Conn_01x03-Connector_Generic J6
 U 1 1 5FF4879A
 P 7350 4200
 F 0 "J6" H 7430 4242 50  0000 L CNN
@@ -204,7 +182,7 @@ F 3 "~" H 7350 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J5
+L eight-channel-argb-rescue:Conn_01x03-Connector_Generic J5
 U 1 1 5FF48D18
 P 7350 3800
 F 0 "J5" H 7430 3842 50  0000 L CNN
@@ -215,7 +193,7 @@ F 3 "~" H 7350 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J4
+L eight-channel-argb-rescue:Conn_01x03-Connector_Generic J4
 U 1 1 5FF49041
 P 7350 3400
 F 0 "J4" H 7430 3442 50  0000 L CNN
@@ -226,7 +204,7 @@ F 3 "~" H 7350 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J3
+L eight-channel-argb-rescue:Conn_01x03-Connector_Generic J3
 U 1 1 5FF495A2
 P 7350 3000
 F 0 "J3" H 7430 3042 50  0000 L CNN
@@ -237,7 +215,7 @@ F 3 "~" H 7350 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J8
+L eight-channel-argb-rescue:Conn_01x03-Connector_Generic J8
 U 1 1 5FF4A43D
 P 7350 5000
 F 0 "J8" H 7430 5042 50  0000 L CNN
@@ -290,8 +268,6 @@ Wire Wire Line
 	6900 2100 6900 2300
 Wire Wire Line
 	6900 5100 7150 5100
-Wire Wire Line
-	4950 2100 5200 2100
 Wire Wire Line
 	7150 4700 6900 4700
 Connection ~ 6900 4700
@@ -371,64 +347,15 @@ Wire Wire Line
 	7150 5000 6350 5000
 Wire Wire Line
 	6350 5000 6350 3750
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5FF6F199
-P 4700 1850
-F 0 "#FLG02" H 4700 1925 50  0001 C CNN
-F 1 "PWR_FLAG" H 4450 1850 50  0000 C CNN
-F 2 "" H 4700 1850 50  0001 C CNN
-F 3 "~" H 4700 1850 50  0001 C CNN
-	1    4700 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4550 2150 4700 2150
-Wire Wire Line
-	4700 1500 4700 1850
-Connection ~ 4700 1850
-Wire Wire Line
-	4700 1850 4700 1950
-Wire Wire Line
-	7000 1850 6700 1850
 Wire Wire Line
 	4900 1850 4900 1950
 Wire Wire Line
 	4900 1950 4700 1950
 Connection ~ 4700 1950
-Wire Wire Line
-	4700 1950 4700 2150
-Wire Wire Line
-	5200 1550 5200 1650
-Connection ~ 5200 2100
-Wire Wire Line
-	5200 1550 5450 1550
-Wire Wire Line
-	5450 1550 5450 1500
-Wire Wire Line
-	5450 1200 5200 1200
 $Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5FF8D592
-P 5450 1500
-F 0 "#FLG03" H 5450 1575 50  0001 C CNN
-F 1 "PWR_FLAG" H 5200 1500 50  0000 C CNN
-F 2 "" H 5450 1500 50  0001 C CNN
-F 3 "~" H 5450 1500 50  0001 C CNN
-	1    5450 1500
-	1    0    0    -1  
-$EndComp
-Connection ~ 5450 1500
-Wire Wire Line
-	5450 1500 5450 1200
-Connection ~ 6700 1850
-Wire Wire Line
-	6800 1700 6800 2100
-Connection ~ 6800 2100
-Wire Wire Line
-	6800 2100 6900 2100
-$Comp
-L Switch:SW_DIP_x01 SW1
+L eight-channel-argb-rescue:SW_DIP_x01-Switch SW1
 U 1 1 5FFD2886
 P 3800 1950
 F 0 "SW1" H 3800 2217 50  0000 C CNN
@@ -445,7 +372,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 1950 4700 1950
 $Comp
-L power:PWR_FLAG #FLG01
+L eight-channel-argb-rescue:PWR_FLAG-power #FLG01
 U 1 1 5FF41B16
 P 3250 1950
 F 0 "#FLG01" H 3250 2025 50  0001 C CNN
@@ -459,91 +386,101 @@ Connection ~ 3250 1950
 Wire Wire Line
 	3250 1950 3500 1950
 $Comp
-L Connector:Conn_01x06_Male J9
-U 1 1 5FF69EE1
-P 6050 1200
-F 0 "J9" V 6112 1444 50  0000 L CNN
-F 1 "Conn_01x06_Male" V 6203 1444 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S6B-XH-A_1x06_P2.50mm_Horizontal" H 6050 1200 50  0001 C CNN
-F 3 "~" H 6050 1200 50  0001 C CNN
-	1    6050 1200
-	0    1    1    0   
+L SamacSys:350211-1 J?
+U 1 1 6053820E
+P 5300 1300
+F 0 "J?" H 5928 1196 50  0000 L CNN
+F 1 "350211-1" H 5928 1105 50  0000 L CNN
+F 2 "3502111" H 5950 1400 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/0471430" H 5950 1300 50  0001 L CNN
+F 4 "Pin & Socket Connectors CONN PCM 4 POS TIN" H 5950 1200 50  0001 L CNN "Description"
+F 5 "10.29" H 5950 1100 50  0001 L CNN "Height"
+F 6 "0471430" H 5950 1000 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/0471430" H 5950 900 50  0001 L CNN "RS Price/Stock"
+F 8 "TE Connectivity" H 5950 800 50  0001 L CNN "Manufacturer_Name"
+F 9 "350211-1" H 5950 700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5300 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1850 5000 1850
+Connection ~ 5200 2100
+Wire Wire Line
+	5200 2100 6900 2100
+Wire Wire Line
+	4950 2100 5200 2100
+Wire Wire Line
+	4700 1950 4700 2150
+Connection ~ 5000 1850
+Wire Wire Line
+	5000 1850 7000 1850
+Wire Wire Line
+	5300 1600 5000 1600
+Wire Wire Line
+	5300 1500 5200 1500
+Connection ~ 5200 1500
+Wire Wire Line
+	5300 1400 5200 1400
+Wire Wire Line
+	5200 1400 5200 1500
+Wire Wire Line
+	5200 1500 5200 2100
+Wire Wire Line
+	5000 1600 5000 1850
+$Comp
+L eight-channel-argb-rescue:PWR_FLAG-power #FLG03
+U 1 1 5FF8D592
+P 5200 1050
+F 0 "#FLG03" H 5200 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4950 1050 50  0000 C CNN
+F 2 "" H 5200 1050 50  0001 C CNN
+F 3 "~" H 5200 1050 50  0001 C CNN
+	1    5200 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 1050
+Connection ~ 5000 950 
+Wire Wire Line
+	5200 1050 5200 1400
+Wire Wire Line
+	5000 950  5000 1600
+$Comp
+L eight-channel-argb-rescue:GND-power #PWR02
+U 1 1 5FF37BFD
+P 5200 850
+F 0 "#PWR02" H 5200 600 50  0001 C CNN
+F 1 "GND" H 5205 677 50  0000 C CNN
+F 2 "" H 5200 850 50  0001 C CNN
+F 3 "" H 5200 850 50  0001 C CNN
+	1    5200 850 
+	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J10
-U 1 1 5FF6B11B
-P 7400 1200
-F 0 "J10" V 7462 1444 50  0000 L CNN
-F 1 "Conn_01x06_Male" V 7553 1444 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S6B-XH-A_1x06_P2.50mm_Horizontal" H 7400 1200 50  0001 C CNN
-F 3 "~" H 7400 1200 50  0001 C CNN
-	1    7400 1200
-	0    1    1    0   
+L eight-channel-argb-rescue:PWR_FLAG-power #FLG02
+U 1 1 5FF6F199
+P 5000 950
+F 0 "#FLG02" H 5000 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 4750 950 50  0000 C CNN
+F 2 "" H 5000 950 50  0001 C CNN
+F 3 "~" H 5000 950 50  0001 C CNN
+	1    5000 950 
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 1600 6700 1850
+	5200 1050 5200 850 
 Wire Wire Line
-	5200 2100 6800 2100
-Wire Wire Line
-	4900 1850 6700 1850
-Wire Wire Line
-	6700 1600 6250 1600
-Wire Wire Line
-	6050 1600 6050 1400
-Wire Wire Line
-	6150 1600 6150 1400
-Connection ~ 6150 1600
-Wire Wire Line
-	6150 1600 6050 1600
-Wire Wire Line
-	6250 1600 6250 1400
-Connection ~ 6250 1600
-Wire Wire Line
-	6250 1600 6150 1600
-Wire Wire Line
-	5200 1650 5750 1650
-Wire Wire Line
-	5750 1650 5750 1400
-Connection ~ 5200 1650
-Wire Wire Line
-	5200 1650 5200 2100
-Wire Wire Line
-	5750 1650 5850 1650
-Wire Wire Line
-	5850 1650 5850 1400
-Connection ~ 5750 1650
-Wire Wire Line
-	5850 1650 5950 1650
-Wire Wire Line
-	5950 1650 5950 1400
-Connection ~ 5850 1650
-Wire Wire Line
-	6800 1700 7100 1700
-Wire Wire Line
-	7100 1700 7100 1450
-Wire Wire Line
-	7100 1450 7200 1450
-Wire Wire Line
-	7200 1450 7200 1400
-Connection ~ 7100 1450
-Wire Wire Line
-	7100 1450 7100 1400
-Wire Wire Line
-	7200 1450 7300 1450
-Wire Wire Line
-	7300 1450 7300 1400
-Connection ~ 7200 1450
-Wire Wire Line
-	7000 1850 7400 1850
-Wire Wire Line
-	7400 1850 7400 1400
-Connection ~ 7000 1850
-Wire Wire Line
-	7400 1400 7500 1400
-Connection ~ 7400 1400
-Wire Wire Line
-	7400 1400 7500 1400
-Connection ~ 7500 1400
-Wire Wire Line
-	7500 1400 7600 1400
+	5000 850  5000 950 
+$Comp
+L eight-channel-argb-rescue:+5V-power #PWR01
+U 1 1 5FF37571
+P 5000 850
+F 0 "#PWR01" H 5000 700 50  0001 C CNN
+F 1 "+5V" H 5015 1023 50  0000 C CNN
+F 2 "" H 5000 850 50  0001 C CNN
+F 3 "" H 5000 850 50  0001 C CNN
+	1    5000 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 1400
+Connection ~ 5000 1600
 $EndSCHEMATC
